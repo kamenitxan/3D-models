@@ -1,4 +1,4 @@
-translate([0,0,-150]) import("/home/tomaspavel/Dokumenty/3dprint/sipky_tess/DartCap.stl");
+translate([0,0,-150]) import("DartCap.stl");
 
 //import("/home/tomaspavel/Dokumenty/3dprint/sipky_zdemak/DartHolder.stl");
 

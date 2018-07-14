@@ -1,5 +1,5 @@
 
-import("/home/tomaspavel/Dokumenty/3dprint/sipky_tess/DartHolder.stl");
+import("DartHolder.stl");
 
 font = "Liberation Sans";
 letter_size = 11;
