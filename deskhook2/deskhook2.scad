@@ -9,7 +9,7 @@ module etn() {
 }
 
 module name() {
-	color("red") linear_extrude(1) text("PKr", size = 9, font = font, halign = "center", valign = "center", $fn = 16);
+	color("red") linear_extrude(1) text("MKt", size = 9, font = font, halign = "center", valign = "center", $fn = 16);
 }
 
 module half() {

@@ -11,10 +11,11 @@ v5=v4+6;
 v6=v5+12;
 v7=v6+30;
 delka=v7+7*w_width;
+mez=0.5;
 
 
 module spodek(add) {
-  translate([0, 0, -w_width]) cube(size=[delka+w_width+add, hloubka+w_width*2+add, w_width], center=false);
+  translate([0, 0, -w_width]) cube(size=[delka+w_width+add+mez, hloubka+w_width*2+add+mez, w_width], center=false);
 }
 
 module bok_dlouhy(y, add, height, move) {
@@ -59,13 +60,13 @@ module celek() {
 
 module viko() {
   spodek(w_width*2);
-  bok_kratky(0, w_width*2, vyska_viko,0);
-  bok_kratky(v7+7*w_width, w_width*2, vyska_viko,w_width*2);
+  bok_kratky(0, w_width*2+mez, vyska_viko,0);
+  bok_kratky(v7+7*w_width, w_width*2+mez, vyska_viko,w_width*2+mez);
 
-  bok_dlouhy(0,w_width*2,vyska_viko,0);
-  bok_dlouhy(hloubka+w_width,w_width*2,vyska_viko,w_width*2);
+  bok_dlouhy(0,w_width*2+mez,vyska_viko,0);
+  bok_dlouhy(hloubka+w_width,w_width*2+mez,vyska_viko,w_width*2+mez);
 }
 
 
 //celek();
-translate([-w_width, -w_width, +90]) viko();
+translate([-w_width-mez/2, -w_width-mez/2, +30]) color("red") viko();

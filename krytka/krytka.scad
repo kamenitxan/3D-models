@@ -1,6 +1,6 @@
-vyska=4;
-sirka=4;
-sirka_sroub=3;
+vyska=5;
+sirka=7.9/2;
+sirka_sroub=6.9/2;
 $fn=300;
 
 difference() {
@@ -11,7 +11,7 @@ difference() {
 translate([0, 0, -vyska/2]) {
   difference() {
     sphere(r=sirka);
-    translate([0, 0, 5]) cube(size=[10, 10, 10], center=true);
+    translate([0, 0, 5]) cube(size=[20, 20, 10], center=true);
   }
 
 }
