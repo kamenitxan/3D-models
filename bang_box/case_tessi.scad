@@ -3,13 +3,13 @@ hloubka=92;
 vyska=60;
 vyska_viko=20;
 
-v1=58;
+v1=78;
 v2=v1+24;
 v3=v2+6;
 v4=v3+7;
 v5=v4+6;
 v6=v5+12;
-v7=v6+30;
+v7=v6+50;
 delka=v7+7*w_width;
 mez=0.5;
 
@@ -66,6 +66,7 @@ module viko() {
   bok_dlouhy(0,w_width*2+mez,vyska_viko,0);
   bok_dlouhy(hloubka+w_width,w_width*2+mez,vyska_viko,w_width*2+mez);
 }
+
 
 
 //celek();
