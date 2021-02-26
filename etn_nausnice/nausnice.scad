@@ -19,7 +19,7 @@ module logo(velikost) {
 
 module nausnice(i, velikost) {
 	translate([20 * i, 0, 0]) scale([velikost, velikost, 1]) {
-		//logo(velikost);
+		logo(velikost);
 		color("red") translate([0, 0, -0.0]) kolo(velikost);
 	}
 }

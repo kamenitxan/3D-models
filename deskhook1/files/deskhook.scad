@@ -1,8 +1,8 @@
-// etn stoly 18mm
-deskwidth = 16 - 18; // sirka - default
-name = "MMj";
-logo = false;
-jmeno = false;
+// etn stoly 18mm (26-18)
+deskwidth = 26 - 22; // sirka - default
+name = "Vašík";
+logo = true;
+jmeno = true;
 font = "Liberation Sans";
 $fn=50;
 
@@ -56,10 +56,10 @@ module deskhook()
 	difference() {
 		hull() {
 			translate([-1*(deskwidth+10),0,1]) cube([deskwidth+12,10,38]);
-			translate([5,1,39]) sphere(r = 1);
-			translate([5,1,1]) sphere(r = 1);
-			translate([5,10,39]) cube([1,1,1]);
-			translate([5,10,0]) cube([1,1,1]);
+			translate([15,1,39]) sphere(r = 1);
+			translate([15,1,1]) sphere(r = 1);
+			translate([15,10,39]) cube([1,1,1]);
+			translate([15,10,0]) cube([1,1,1]);
 
 			translate([-27,1,39]) sphere(r = 1);
 			translate([-27,1,1]) sphere(r = 1);
